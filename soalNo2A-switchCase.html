@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal No 2-A - Penentuan Hari Esok</title>
+</head>
+
+<body>
+    <script>
+        let hariIni = prompt("Masukan Hari");
+        cekHariEsok();
+        function cekHariEsok() {
+            switch (hariIni){
+                case "senin":
+                    alert("selasa")
+                    break;
+                case "selasa":
+                    alert("rabu")
+                    break;
+                case "rabu":
+                    alert("kamis")
+                    break;
+                case "kamis":
+                    alert("jum'at")
+                    break;
+                case "jum'at":
+                    alert("sabtu")
+                    break;
+                case "sabtu":
+                    alert("minggu")
+                    break;
+                case "minggu":
+                    alert("senin")
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
