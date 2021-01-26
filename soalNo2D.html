@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2-D</title>
+    <script>
+
+        
+        function periksaBilanganPrima() {
+
+            
+            let inputanBilangan = document.querySelector(".inputBilangan").value;
+            for (let i = 2; i <= inputanBilangan; i++) {
+                let flag = 0;
+
+                for (let primeAwal = 2; primeAwal < i; primeAwal++) {
+                    if (i % primeAwal == 0) {
+                        flag = 1;
+                        break;
+                    }
+                }
+                if (i> 1 && flag == 0) {
+                    alert(i)
+                    // document.write(i)
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    
+    <input type="number" class="inputBilangan">
+    <button onclick="periksaBilanganPrima()">Periksa Bilangan Prima</button>
+</body>
+
+</html>
